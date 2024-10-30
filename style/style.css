@@ -1,0 +1,106 @@
+.bio-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+    width: 100%;
+}
+
+.bio-container__image {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.bio-container__overlay {
+    position: absolute;
+}
+
+.bio-container__overlay.vert-centre {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bio-container__overlay.vert-top {
+    top: 0;
+}
+
+.bio-container__overlay.vert-bottom {
+    bottom: 0;
+}
+
+.bio-container__overlay.hor-centre {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bio-container__overlay.hor-left {
+    left: 0;
+}
+
+.bio-container__overlay.hor-right {
+    right: 0;
+}
+
+.bio-container__overlay.centered {
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bio-container__overlay-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px;
+    position: absolute;
+    width: 100%;
+}
+
+.bio-container__overlay-inner p,
+.bio-container__overlay-inner img,
+.bio-container__overlay-inner span,
+.bio-container__overlay-inner h1,
+.bio-container__overlay-inner h2,
+.bio-container__overlay-inner h3,
+.bio-container__overlay-inner h4,
+.bio-container__overlay-inner h5 {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.bio-container__overlay-inner.horalign-left {
+    left: 0;
+    text-align: left;
+}
+
+.bio-container__overlay-inner.horalign-center {
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.bio-container__overlay-inner.horalign-right {
+    right: 0;
+    text-align: right;
+}
+
+.bio-container__overlay-inner.vertalign-top {
+    top: 0;
+}
+
+.bio-container__overlay-inner.vertalign-center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bio-container__overlay-inner.vertalign-bottom {
+    bottom: 0;
+}
+
+/*Quick 'n' dirty fix*/
+.bio-container__overlay-inner.horalign-center.vertalign-center {
+    transform: translateX(-50%) translateY(-50%);
+}
